@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aula 1 Div</title>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Oxygen" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="page">
+			<div id="header">
+				<img id="logo" src="img/codecoffee.png">
+				<h1>Code Coffee</h1>
+				<ul>
+					<li><a href="index.html"><i class="icon-home"></i> Home</a></li>
+					<li><a href="quem-somos.html"><i class="icon-info-circled"></i> Quem Somos</a></li>
+					<li><a href="contato.html"><i class="icon-phone"></i> Contato</a></li>
+				</ul>
+			</div>
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="quem-somos.html">Quem Somos</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</div>
+			<div id="sidebarleft">
+				<div class="boxpadrao">
+					<h3><i class="icon-megaphone"></i> Novidades</h3>
+				</div>
+				<div class="boxpadrao">
+					<h3><i class="icon-plus-circled"></i> Saiba Mais</h3>
+				</div>
+				<div class="boxpadrao">
+					<h3><i class="icon-user-plus"></i> Cadastre-se</h3>
+					<form action="recebe.html" method="GET">
+						E-mail: <input type="text" name="nome">
+						Senha: <input type="password" name="email">
+						<input type="submit" value="Enviar">
+					</form>
+				</div>
+			</div>
+			<div id="content">
+				<h1>Contato</h1>
+				<form action="recebe.html" method="POST">
+					<fieldset>
+						<legend>Dados Pessoais:</legend>
+						<label class="alingright" for="txtnome"> Nome:</label> <input type="text" id="txtnome" name="nome" placeholder="Digite seu nome..."><br>
+						<label class="alingright" for="txtemail">E-mail:</label> <input type="text" id="txtemail" name="email"><br>
+						<label class="alingright" for="txtpass">Senha:</label> <input type="password" id="txtpass" name="pass"><br>
+						<br>
+						Sexo:<br>
+						<input type="radio" name="genero" value="m" checked> Male<br>
+						<input type="radio" name="genero" value="f"> Female<br>
+					</fieldset>	
+					<fieldset>
+						<legend>Endereço:</legend>
+						<label class="alingright" for="txtrua">Rua:</label> <input type="text" id="txtrua" name="rua"><br>
+						<label class="alingright" for="slestado">Estado: </label> 
+						<select name="estado" id="slestado">
+							<option value="SP">São Paulo</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="SC">Santa Catarina</option>
+						</select>
+					</fieldset>
+					Mensagem:
+					<br>
+					<textarea name="msg" placeholder="Digite sua dúvida..."></textarea>
+					<br>
+					<input type="checkbox" name="news" id="cbnews" value="1" checked> <label for="cbnews">Deseja Receber Newsletter?</label><br>
+						
+						<input type="submit" value="Enviar">
+				</form>
+				
+			</div>
+			<div id="sidebarright">
+				<div class="sidebox"><img src="img/cafe1.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe2.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe3.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe4.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe1.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe2.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe3.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe4.jpg" alt="Foto de Café"></div>
+			</div>
+			<div id="footer">
+				<img src="img/mug.svg" style="width: 20px;"> Renan Cavichi
+			</div>
+		</div>
+	</body>
+</html>

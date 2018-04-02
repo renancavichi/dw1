@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aula 1 Div</title>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Oxygen" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+	</head>
+	<body>
+		<div id="page">
+			<div id="header">
+				<img id="logo" src="img/codecoffee.png">
+				<h1>Code Coffee</h1>
+				<ul>
+					<li><a href="index.html"><i class="icon-home"></i> Home</a></li>
+					<li><a href="quem-somos.html"><i class="icon-info-circled"></i> Quem Somos</a></li>
+					<li><a href="contato.html"><i class="icon-phone"></i> Contato</a></li>
+				</ul>
+			</div>
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="quem-somos.html">Quem Somos</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</div>
+			<div id="sidebarleft">
+				<div class="boxpadrao">
+					<h3><i class="icon-megaphone"></i> Novidades</h3>
+				</div>
+				<div class="boxpadrao">
+					<h3><i class="icon-plus-circled"></i> Saiba Mais</h3>
+				</div>
+				<div class="boxpadrao">
+					<h3><i class="icon-user-plus"></i> Cadastre-se</h3>
+					<form action="recebe.html" method="GET">
+						E-mail: <input type="text" name="nome">
+						Senha: <input type="password" name="email">
+						<input type="submit" value="Enviar">
+					</form>
+				</div>
+			</div>
+			<div id="content">
+				<h1>Home</h1>
+				<img src="img/cafe-full.jpg" style="width: 100%;" alt="Foto de Café">
+				<p class="justifica">O café é uma bebida produzida a partir dos grãos torrados do fruto do cafeeiro. É servido tradicionalmente quente, mas também pode ser consumido gelado. O café é um estimulante, por possuir cafeína — geralmente 80 a 140 mg para cada 207 ml dependendo do método de preparação.[1] Em alguns períodos da década de 1980, o café era a segunda mercadoria mais negociada no mundo por valor monetário, atrás apenas do petróleo.[2]</p>
+				<p>Este dado estatístico ainda é amplamente citado, mas tem sido impreciso por cerca de duas décadas, devido à queda do preço do café durante a crise do produto na década de 1990, reduzindo o valor total de suas exportações. Em 2003, o café foi o sétimo produto agrícola de exportação mais importante em termos de valor, atrás de culturas como trigo, milho e soja.[3]</p>
+				<table class="tabelacafe">
+					<tr class="corsim">
+						<th colspan="4">Intensidades por Região</th>
+					</tr>
+					<tr class="corsim">
+						<th>Café</th>
+						<th>Região</th>
+						<th>Classificação</th>
+						<th>Intensidade</th>
+					</tr>
+					<tr>
+						<td>Roma</td>
+						<td>Américas Central</td>
+						<td rowspan="3">Intenso</td>
+						<td class="centralizar">8</td>
+					</tr>
+					<tr>
+						<td>Outro</td>
+						<td>Américas do Sul</td>
+						<td class="centralizar">8</td>
+					</tr>
+					<tr>
+						<td>Arpeggio</td>
+						<td>Américas do Sul</td>
+						<td class="centralizar">8</td>
+					</tr>
+					Ristretto
+					<tr class="corsim">
+						<td>Volluto</td>
+						<td>Colombia</td>
+						<td>Moderado</td>
+						<td class="centralizar">4</td>
+					</tr>
+				</table>
+			</div>
+			<div id="sidebarright">
+				<div class="sidebox"><img src="img/cafe1.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe2.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe3.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe4.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe1.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe2.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe3.jpg" alt="Foto de Café"></div>
+				<div class="sidebox"><img src="img/cafe4.jpg" alt="Foto de Café"></div>
+			</div>
+			<div id="footer">
+				<img src="img/mug.svg" style="width: 20px;"> Renan Cavichi
+			</div>
+		</div>
+		<script>
+			ReactDOM.render(
+			<h1>Hello, world!</h1>,
+				document.getElementById('root')
+			);
+		</script>
+	</body>
+</html>

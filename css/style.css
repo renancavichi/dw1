@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'code-coffee';
+  src: url('../font/code-coffee.eot?59896309');
+  src: url('../font/code-coffee.eot?59896309#iefix') format('embedded-opentype'),
+       url('../font/code-coffee.woff2?59896309') format('woff2'),
+       url('../font/code-coffee.woff?59896309') format('woff'),
+       url('../font/code-coffee.ttf?59896309') format('truetype'),
+       url('../font/code-coffee.svg?59896309#code-coffee') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'code-coffee';
+    src: url('../font/code-coffee.svg?59896309#code-coffee') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "code-coffee";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-home:before { content: '\e800'; } /* '' */
+.icon-info-circled:before { content: '\e801'; } /* '' */
+.icon-phone:before { content: '\e802'; } /* '' */
+.icon-megaphone:before { content: '\e803'; } /* '' */
+.icon-plus-circled:before { content: '\e804'; } /* '' */
+.icon-user-plus:before { content: '\f234'; } /* '' */
+
+body{
+	font-family: 'Oxygen', sans-serif;
+	/* background: #234233; */ 
+}
+#page{
+	width: 800px;
+	margin: 0 auto 0 auto;
+}
+#header{
+	width: 800px; 
+	height: 200px; 
+	background: #FFFFFF; 
+}
+#nav{
+	width: 800px; 
+	height: 50px; 
+	background: #5b4f3f;
+	margin: 10px 0 10px 0;
+}
+#sidebarleft, #sidebarright {
+	width: 200px; 
+	background: #EEE;
+	float: left;
+	padding: 0 0 20px 0;
+}
+#sidebarright {
+	background: #EEE;
+}
+
+#sidebarright .sidebox{
+	width: 70px;
+	height: 70px;
+	float: left;
+	margin: 20px 0 0 20px;
+	background: #654645;
+}
+#sidebarright .sidebox img{
+	border-radius: 37px;
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+}
+#content{
+	width: 380px; 
+	background: #FFF;
+	float: left;
+	margin: 0 10px;		
+}
+#content .justifica{
+	text-align: justify;
+}
+
+#footer{
+	width: 800px; 
+	height: 14px; 
+	background: #000;
+	float:left;
+	margin: 10px 0 0 0;
+	text-align: center;
+	padding: 30px;
+	color: #FFF;
+}
+
+#logo{
+	width: 120px;
+	float: left;
+	margin: 44px 0 0 -11px;
+}
+
+#header h1{
+	display: block;
+	margin: 77px 0 0 -10px;
+	float: left;
+	font-family: 'Indie Flower', cursive;
+	color: #5b4f3f;
+}
+#header ul, #nav ul{
+	list-style-type: none;
+	float: right;
+	width: auto;
+	padding: 0;
+}
+#nav ul{
+	float: left;
+	padding: 0 0 0 20px;
+}
+#header ul li, #nav ul li{
+	display: inline-block;
+	padding: 0 5px;
+}
+#header ul li a, #nav ul li a {
+	text-decoration: none;
+	color: #5b4f3f;
+	font-weight: bold;
+}
+#nav ul li a {
+	color: #FFF;
+}
+.boxpadrao{
+	width: 180px;
+	height: 180px;
+	background: #E3E3E3;
+	margin: 10px 0 0 10px;
+}
+.boxpadrao h3{
+	padding: 10px;
+}
+.tabelacafe{
+	width: 100%; 
+}
+.tabelacafe, .tabelacafe td, .tabelacafe th {
+	 border: 1px dotted #777; 
+}
+.tabelacafe td, .tabelacafe th{
+	padding: 5px 5px;
+}
+.corsim{
+	background: #EEE;
+}
+.centralizar{
+	text-align: center;
+}
+textarea {
+	width: 90%;
+}
+fieldset{
+	margin: 20px 0;
+	padding: 20px 10px;
+}
+label.alingright{
+	width: 100px;
+	display: inline-block;
+	text-align: right;
+	background: #EEE;
+}
